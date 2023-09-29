@@ -21,6 +21,7 @@ module.exports = {
 
     // handler para adcionar novo item no banco
     add: function (req, res) {
+        console.log(req.body);
         ItemPatrimonioService.addNewItemPatrimonio(
             req.body
         ).then((status) => {
