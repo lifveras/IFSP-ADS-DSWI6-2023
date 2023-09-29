@@ -1,23 +1,23 @@
 <template>
   <div>
-    <b-card
+    <v-card
       tag="article"
-      style="max-width: 260px; max-height: 300px"
+      width="250"
       v-bind:title="item.itemTipo.nome"
       v-bind:sub-title="item.patrimonio"
       class="mb-2"
     >
-      <b-card-img
-        top
+      <v-img
         v-bind:src="item.itemTipo.imagem"
+        cover
         class="card-image"
-      ></b-card-img>
-      <b-card-text
-        ><b>Responsável:</b> <br />
+      ></v-img>
+      <v-card-text>
+        <b>Responsável:</b> <br/>
         {{ item.responsavel.prontuario }} -
-        {{ item.responsavel.nome }}</b-card-text
-      >
-    </b-card>
+        {{ item.responsavel.nome }}
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 
